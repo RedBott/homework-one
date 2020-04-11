@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+.main{
+    background-color: cyan;
+}
+.container{
+    background-color:cyan;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar{
+    width:50%;
+    display:flex;
+    float: right;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.albums{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.album-list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.cover{
+    width: 200px;
+    height: 200px;
+}
+.in-row{
+    width: 100%;
+    display: flex;
+}
+.remove{
+    width:100px;
+    height: 40px;
+    background-color: black;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.addAlbum {
+    background-color: black;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    float:left;
   }
+h1{
+    color:black;
+    text-align: left;
+    font-size: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+label{
+    float:left;
+    color:grey;
 }
-
-.App-link {
-  color: #61dafb;
+select{
+    float:left;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+select option {
+    margin: 40px;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
 }
